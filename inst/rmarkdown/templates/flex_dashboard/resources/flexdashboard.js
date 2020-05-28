@@ -1213,9 +1213,7 @@ var FlexDashboard = (function () {
       var activeTab = $('ul.nav a[href="' + hash + '"]');
       if (activeTab.length) {
         activeTab.tab('show');
-      } else {
-        $('ul.nav a:first').tab('show');
-      }
+      } 
       FlexDashboardUtils.manageActiveNavbarMenu();
     });
 
