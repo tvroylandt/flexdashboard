@@ -687,6 +687,10 @@ var FlexDashboard = (function () {
         }).remove();
       if (!haveNotes)
         $(this).find('.chart-notes').remove();
+      
+      // make it a flexbox row
+      if (haveFlexHeight)
+        $(this).addClass('dashboard-row-flex');
 
       // now we can set the height on all the wrappers (based on maximum
       // figure height + room for title and notes, or data-height on the
